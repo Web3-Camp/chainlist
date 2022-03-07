@@ -45,9 +45,9 @@ function MyApp({ Component, pageProps }) {
       <CssBaseline />
       <Component {...pageProps} changeTheme={ changeTheme } />
       <SnackbarController />
-      { shutdownNoticeOpen &&
-        <ShutdownNotice close={ closeShutdown } />
-      }
+      {/*{ shutdownNoticeOpen &&*/}
+      {/*  <ShutdownNotice close={ closeShutdown } />*/}
+      {/*}*/}
     </ThemeProvider>
   )
 }
