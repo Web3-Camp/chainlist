@@ -1,12 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
-    // swcMinify: true,
-    experimental: {
-      // ssr and displayName are configured by default
-      styledComponents: false,
-  
-    },
     webpack: (config, { webpack }) => {
       config.plugins.push(new webpack.IgnorePlugin({
         resourceRegExp: /^electron$/
