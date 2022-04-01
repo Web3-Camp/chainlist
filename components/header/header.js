@@ -138,14 +138,14 @@ function Header(props) {
           </Button>
         </div>
       )}
-      <div className={ classes.themeSelectContainer }>
+      {/* <div className={ classes.themeSelectContainer }>
         <StyledSwitch
           icon={ <Brightness2Icon className={ classes.switchIcon }/> }
           checkedIcon={ <WbSunnyOutlinedIcon className={ classes.switchIcon }/> }
           checked={ darkMode }
           onChange={ handleToggleChange }
         />
-      </div>
+      </div> */}
       <Button
         disableElevation
         className={ classes.accountButton }
