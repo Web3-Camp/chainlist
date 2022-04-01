@@ -33,11 +33,11 @@ jobs:
 
       - run: yarn install --frozen-lockfile
       - run: yarn build2
-      - run: echo "chainlist.web3camp.us"  > ./out/CNAME
 
-      - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out
+#       - name: Deploy to gh-pages
+#         uses: peaceiris/actions-gh-pages@v3
+#         if: ${{ github.ref == 'refs/heads/main' }}
+#         with:
+#           github_token: ${{ secrets.GITHUB_TOKEN }}
+#           publish_dir: ./out
+#           cname: chainlist.web3camp.us
